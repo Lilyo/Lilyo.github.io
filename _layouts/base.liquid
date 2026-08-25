@@ -1,101 +1,58 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
 
   <meta name="author" content="{{ site.name }}" />
-  <meta name="description" content="{{ site.description }}" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
 
-  <link href="/vendor/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link href="/vendor/css/font-awesome.min.css" rel="stylesheet">
   <link href="/vendor/css/academicons.min.css" rel="stylesheet">
   <link href="/vendor/pygments/default.css" rel="stylesheet">
-  <link href="/css/bamos.css" rel="stylesheet">
-  <link href="/css/sharingbuttons.css" rel="stylesheet">
-  <script src="/vendor/js/jquery.min.js"></script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
-	<div class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="navbar-header">
-						  <a href="/" class="navbar-brand">
-                  <div>
-                      <img src="/images/Arthur-face2.jpg" class="img-circle"></img>
-                      You-Feng Wu
-                  </div>
-              </a>
-						<button class="navbar-toggle" type="button" data-toggle="collapse"
-                    data-target="#navbar-main">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="navbar-collapse collapse" id="navbar-main">
-						<ul class="nav navbar-nav">
-							<li>
-								<a href="/">About</a>
-							</li>
-							<li>
-								
-								<a href="/blog/">Blog</a>
-								{% comment %}
-								This is a block comment in Liquid
-								<a href="/blog/">Blog</a>
-								or
-								<a href="https://u-beewu.medium.com/">Blog</a>
-								or
-								<a href="/data/mobileCam(beta)/">Demo(Beta)</a>
-								or
-								<a href="https://share.streamlit.io/lilyo/style-transfer-web-app/main/app.py">StyleTransfer(Beta)</a>
-								{% endcomment %}
-							</li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right" style="font-size: 1.5em">
-							<li>
-								<a href="https://github.com/Lilyo" target="_blank">
-									<i class="fa fa-lg fa-github"></i></a>
-							</li>
-              <li>
-                <a href="https://scholar.google.com.tw/citations?hl=zh-TW&view_op=list_works&gmla=AJsN-F5cXEm3DcCrNxtM9TcQjGfayIXB1EpvcQM_KRAe9pRiXs8YaUgvpvHdPNWXG_aSHlF8uoMFHSF-7rjGP26BNBDXHKQ0OtM4UYryJS57huM7UUB9FZg&user=0VGDeTUAAAAJ" target="_blank">
-                  <i class="ai ai-google-scholar"></i></a>
-              </li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="/images/Arthur-face2.jpg" alt="">
+        You-Feng Wu
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">About</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li class="nav-icon">
+          <a href="https://github.com/Lilyo" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fa fa-github"></i></a>
+        </li>
+        <li class="nav-icon">
+          <a href="https://scholar.google.com.tw/citations?user=0VGDeTUAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">
+            <i class="ai ai-google-scholar"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 {{ content }}
 
-  <script src="/js/sp.js"></script>
-  <script src="/vendor/js/bootstrap.min.js"></script>
-  <script src="/vendor/js/anchor.min.js"></script>
-  <script src="/vendor/js/jquery.toc.js"></script>
-  <script type="text/javascript">
-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <footer class="site-footer">
+    © {{ 'now' | date: "%Y" }} You-Feng (Arthur) Wu ·
+    <a href="/atom.xml">RSS</a>
+  </footer>
 
-   ga('create', 'UA-102191838-1', 'auto');
-   ga('send', 'pageview');
-
-   $("#toc").toc({
-       'headings': 'h2,h3'
-   });
-   anchors.add('h2,h3');
-  </script>
-
+  <script src="/js/site.js"></script>
 </body>
-
 </html>
