@@ -400,7 +400,13 @@ main.wrap { padding-top: 8px; padding-bottom: 48px; }
 .news-title { color: var(--ink); font-weight: 600; }
 
 .news-media { max-width: 640px; }
-.news-media img { border-radius: 10px; display: block; }
+.news-media img {
+  border-radius: 10px;
+  display: block;
+  max-height: 520px;
+  width: auto;
+  max-width: 100%;
+}
 
 /* 8. Disclosure (<details>)
    -------------------------------------------------------------------------- */

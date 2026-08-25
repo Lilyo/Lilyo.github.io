@@ -1,533 +1,532 @@
-<p style="color:#0072DD;font-size:2.6rem">
-<b>A techie initiator, a problem hacker and a great team player.</b><br>
-</p>
+{::nomarkdown}
+<p class="tagline">A techie initiator, a problem hacker and a great team player.</p>
 
-<div id="" style="text-align: justify;" markdown="1">
-I am a research scientist at <b>Artilux Inc.</b> in Taiwan. My research goal is to achieve visual intelligence for real-world applications 
+<p class="intro">
+I am a Principal Engineer at <b>Artilux Inc.</b> in Taiwan. My research goal is to achieve visual intelligence for real-world applications
 and study advanced topics in <b>machine learning</b> and <b>computer vision</b>.
-</div>
-
-## <i class="fa fa-chevron-right"></i> Spotlight news
-<table class="table table-hover">
-
-<tr>
-<td>
-<p markdown="1" style='margin: 0'>
-<strong>New article! - LLMs as Home Security Guard [<img src="./images/com//update.gif">]</strong><br>
 </p>
+{:/nomarkdown}
 
-[<a href='javascript:;' onclick='$("#abs_llmsg").toggle()'>Intro</a>]<br>
-<div id="abs_llmsg" style="text-align: left;" markdown="1">
-This article introduces a proactive home security framework leveraging Large Language Models (LLMs) to analyze video feeds, detect suspicious activities, 
-and engage in real-time communication with homeowners, revolutionizing traditional surveillance systems.
-<a href='https://lilyo.github.io/2024/04/16/llm_guard/' target='_blank'><img src="/data/llm_guard/demo.gif" onerror="this.style.display='none'" style='border: none;' width='1080' height='360' /></a>
+{::nomarkdown}
+<section class="cv-section" id="news">
+<h2 class="section-title"><i class="fa fa-bullhorn"></i> Spotlight News</h2>
+
+<div class="news-item">
+  <div class="news-head">
+    <span class="news-title">Article: LLMs as Home Security Guard</span>
+    <span class="date-badge">Apr. 16, 2024</span>
+  </div>
+  <details class="disclosure" open>
+    <summary>Intro</summary>
+    <div class="disclosure-body">
+      <p>This article introduces a proactive home security framework leveraging Large Language Models (LLMs) to analyze video feeds, detect suspicious activities,
+      and engage in real-time communication with homeowners, revolutionizing traditional surveillance systems.</p>
+      <p class="news-media"><a href="/2024/04/16/llm_guard/"><img src="/data/llm_guard/demo.gif" alt="LLM home security guard demo" loading="lazy"></a></p>
+    </div>
+  </details>
 </div>
 
-</td>
-<td class='col-md-2' style='text-align:right;'>Apr. 16, 2024</td>
-</tr>
-
-
-
-<tr>
-<td>
-<p markdown="1" style='margin: 0'>
-<strong>New article! - Removing Occlusion Errors 
-</p>
-
-[<a href='javascript:;' onclick='$("#abs_removeocc").toggle()'>Intro</a>]<br>
-<div id="abs_removeocc" style="text-align: left;" markdown="1">
-In this article, we propose a method for addressing occlusion errors in depth completion caused by stereo calibration. 
-Our unsupervised training procedure, not relying on any ground-truth data, combines pseudo labels generation and confidence estimation to reduce the amount of error introduced into the depth map for depth completion.
-<a href='https://lilyo.github.io/2023/06/15/stereo_calib_aug/' target='_blank'><img src="/data/stereo_calib_aug/Overview.png" onerror="this.style.display='none'" style='border: none;' width='1080' height='360' /></a>
+<div class="news-item">
+  <div class="news-head">
+    <span class="news-title">Article: Removing Occlusion Errors</span>
+    <span class="date-badge">Jun. 15, 2023</span>
+  </div>
+  <details class="disclosure">
+    <summary>Intro</summary>
+    <div class="disclosure-body">
+      <p>In this article, we propose a method for addressing occlusion errors in depth completion caused by stereo calibration.
+      Our unsupervised training procedure, not relying on any ground-truth data, combines pseudo labels generation and confidence estimation to reduce the amount of error introduced into the depth map for depth completion.</p>
+      <p class="news-media"><a href="/2023/06/15/stereo_calib_aug/"><img src="/data/stereo_calib_aug/Overview.png" alt="Occlusion error removal overview" loading="lazy"></a></p>
+    </div>
+  </details>
 </div>
 
-</td>
-<td class='col-md-2' style='text-align:right;'>Jun. 15, 2023</td>
-</tr>
-
-
-
-<tr>
-<td>
-<p markdown="1" style='margin: 0'>
-<strong>New article! - Exploring Sub-Actions</strong><br>
-</p>
-
-[<a href='javascript:;' onclick='$("#abs_subactionpost").toggle()'>Intro</a>]<br>
-<div id="abs_subactionpost" style="text-align: left;" markdown="1">
-This article introduces how I designed Node Attention Module from scratch under certain conditions. 
-Our goal is to provide a plug-and-play module to extract sub-actions upon any existing action detection approaches.
-<a href='https://lilyo.github.io/2022/03/23/subaction/' target='_blank'><img src="/data/subaction/demo.gif" onerror="this.style.display='none'" style='border: none;' width='1080' height='360' /></a>
+<div class="news-item">
+  <div class="news-head">
+    <span class="news-title">Article: Exploring Sub-Actions</span>
+    <span class="date-badge">Mar. 23, 2022</span>
+  </div>
+  <details class="disclosure">
+    <summary>Intro</summary>
+    <div class="disclosure-body">
+      <p>This article introduces how I designed Node Attention Module from scratch under certain conditions.
+      Our goal is to provide a plug-and-play module to extract sub-actions upon any existing action detection approaches.</p>
+      <p class="news-media"><a href="/2022/03/23/subaction/"><img src="/data/subaction/demo.gif" alt="Sub-action exploration demo" loading="lazy"></a></p>
+    </div>
+  </details>
 </div>
 
-</td>
-<td class='col-md-2' style='text-align:right;'>Mar. 23, 2022</td>
-</tr>
-
-
-<tr>
-<td>
-<p markdown="1" style='margin: 0'>
-<strong>Our fast gesture recognition method has been granted a patent in Taiwan. </strong><br> 
-</p>
-</td>
-<td class='col-md-2' style='text-align:right;'>Dec. 1, 2021</td>
-</tr>
-
-
-<tr>
-<td>
-<p markdown="1" style='margin: 0'>
-<strong>ML Application - TWS Headset with In-Air Gesturing.</strong><br> 
-</p>
-[<a href='javascript:;' onclick='$("#abs_tws").toggle()'>Intro</a>] <br>
-<div id="abs_tws" style="text-align: justify; display: none" markdown="1">
-This presentation is a case study where we are demonstrating how we developed gesture-controlled headphones using a radar sensor on Edge AI applications. 
-I was assigned as the SDK porject leader to be responsible for this task, and led machine learning team to design gesture set for TWS Headset, build and scale our technology solutions for mmwave radar system.<br>
-<div id='outerdiv' style="width:800px; overflow-x:hidden;">
-<iframe width="640" height="360" src="https://www.youtube.com/embed/POwsmqwSGcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<div class="news-item">
+  <div class="news-head">
+    <span class="news-title">Our fast gesture recognition method has been granted a patent in Taiwan</span>
+    <span class="date-badge">Dec. 1, 2021</span>
+  </div>
 </div>
 
-</td>
-<td class='col-md-2' style='text-align:right;'>Nov. 2020 - Mar. 2022</td>
-</tr>
-
-
-<tr>
-<td>
-<p markdown="1" style='margin: 0'>
-<strong>ML Application - ACSIS Smart Charging Cable with In-Air Gesturing</strong><br>
-</p>
-[<a href='javascript:;' onclick='$("#abs_cable").toggle()'>Intro</a>] <br>
-<div id="abs_cable" style="text-align: justify; display: none" markdown="1">
-The first commercial product using KaiKuTeK AI solution was launched by the SDK team in 2021. 
-It is a symbolic product to push for low power and low-latency deep learning models, computing hardware, and systems for inference on edge devices.<br>
-<a href='https://item.m.jd.com/product/10032443440052.html?gx=RnFtl2BdOjzfndQUrIF-XSHfSvY1pY-x&ad_od=share&utm_source=androidapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=Wxfriends&fbclid=IwAR2Z7i7-_r1LsPFdWGYlHHZS5nzdgimzbd3YGfC__FV7iYRBElljk2QdQeo' target='_blank'><img src="images/application/ACASIS.gif" onerror="this.style.display='none'" style='border: none;' width='640' height='980' /></a>
+<div class="news-item">
+  <div class="news-head">
+    <span class="news-title">ML Application: TWS Headset with In-Air Gesturing</span>
+    <span class="date-badge">Nov. 2020 – Mar. 2022</span>
+  </div>
+  <details class="disclosure">
+    <summary>Intro</summary>
+    <div class="disclosure-body">
+      <p>This presentation is a case study where we are demonstrating how we developed gesture-controlled headphones using a radar sensor on Edge AI applications.
+      I was assigned as the SDK project leader to be responsible for this task, and led the machine learning team to design the gesture set for the TWS Headset, build and scale our technology solutions for the mmWave radar system.</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/POwsmqwSGcM" title="TWS Headset with In-Air Gesturing" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </details>
 </div>
 
-</td>
-<td class='col-md-2' style='text-align:right;'>Nov. 2020 - Jun. 2021</td>
-</tr>
-
-
-<tr>
-<td>
-<p markdown="1" style='margin: 0'>
-<strong>ML Application - Clone Dual-Bay External Hard Drive Duplicator with In-Air Gesturing</strong><br>
-</p>
-
-[<a href='javascript:;' onclick='$("#abs_dup").toggle()'>Intro</a>] <br>
-<div id="abs_dup" style="text-align: justify; display: none" markdown="1">
-<a href='https://world.taobao.com/item/650812289577.htm?spm=a21wu.10013406-tw.taglist-content.22.68703044FnI8Xv' target='_blank'><img src="images/application/duplicator.jpg" onerror="this.style.display='none'" style='border: none;' width='640' height='980' /></a>
+<div class="news-item">
+  <div class="news-head">
+    <span class="news-title">ML Application: ACSIS Smart Charging Cable with In-Air Gesturing</span>
+    <span class="date-badge">Nov. 2020 – Jun. 2021</span>
+  </div>
+  <details class="disclosure">
+    <summary>Intro</summary>
+    <div class="disclosure-body">
+      <p>The first commercial product using the KaiKuTeK AI solution was launched by the SDK team in 2021.
+      It is a symbolic product to push for low power and low-latency deep learning models, computing hardware, and systems for inference on edge devices.</p>
+      <p class="news-media"><a href="https://item.m.jd.com/product/10032443440052.html" target="_blank" rel="noopener"><img src="/images/application/ACASIS.gif" alt="ACSIS smart charging cable with in-air gesturing" loading="lazy"></a></p>
+    </div>
+  </details>
 </div>
 
-</td>
-<td class='col-md-2' style='text-align:right;'>Nov. 2020 - Jun. 2021</td>
-</tr>
-
-
-<tr>
-<td>
-<p markdown="1" style='margin: 0'>
-<strong>JMicron‧KaiKuTeK - Revolutionary Gesture Recognition 60GHz mmWave Radar Solution</strong><br>
-</p>
-
-[<a href='javascript:;' onclick='$("#abs_kkt").toggle()'>Intro</a>] <br>
-<div id="abs_kkt" style="text-align: justify; display: none" markdown="1">
-<div id='outerdiv' style="width:800px; overflow-x:hidden;">
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Ix9PY89ML90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</div>
-</td>
-<td class='col-md-2' style='text-align:right;'>2021</td>
-</tr>
-
-
-</table>
-
-## <i class="fa fa-chevron-right"></i> Experiences
-<table class="table table-hover">
-
-<tr>
-<td>
-<p markdown="1" style='margin: 0'>
-<strong>Senior Software Engineer</strong><br>
-Artilux Inc. | Hsinchu<br>
-
-• Research Field<br>
-&ensp;&ensp;&ensp;&ensp;- Time-gated SPAD<br>
-&ensp;&ensp;&ensp;&ensp;- Depth Completion<br>
-&ensp;&ensp;&ensp;&ensp;- Neural SLAM<br>
-&ensp;&ensp;&ensp;&ensp;- On-device AI inferencing<br>
-
-</p>
-</td>
-<td class='col-md-2' style='text-align:right;'>Mar. 2022 - Present.</td>
-</tr>
-
-<tr>
-<td>
-<p markdown="1" style='margin: 0'>
-<strong>Machine Learning Engineer</strong><br>
-KaiKuTeK Inc. | Taipei<br>
-
-• Research Field<br>
-&ensp;&ensp;&ensp;&ensp;- Sub-actions exploration<br>
-&ensp;&ensp;&ensp;&ensp;- Rapid gesture recognition<br>
-&ensp;&ensp;&ensp;&ensp;- Temporal coherency<br>
-• SDK Machine Learning Team Leader<br>
-&ensp;&ensp;&ensp;&ensp;- Customers support, lead team members.<br>
-&ensp;&ensp;&ensp;&ensp;- Deploy Python API to AWS cloud training platform.<br>
-</p>
-</td>
-<td class='col-md-2' style='text-align:right;'>Feb. 2020 - Mar. 2022</td>
-</tr>
-
-<tr>
-<td>
-<p markdown="1" style='margin: 0'>
-<strong>Military Service in Taiwan</strong>
-</p>
-</td>
-<td class='col-md-2' style='text-align:right;'>Oct. 2019 - Feb. 2020</td>
-</tr>
-
-<tr>
-<td>
-<p markdown="1" style='margin: 0'>
-<strong>Machine Learning Research Intern</strong><br>
-KaiKuTeK Inc. | Taipei<br>
-• Research Field<br>
-&ensp;&ensp;&ensp;&ensp;- Long-Tailed Object Recognition<br>
-&ensp;&ensp;&ensp;&ensp;- Few-shot Learning<br>
-</p>
-</td>
-<td class='col-md-2' style='text-align:right;'>Jul. 2019 - Oct. 2019</td>
-</tr>
-
-</table>
-
-
-## <i class="fa fa-chevron-right"></i> Education
-
-<table class="table table-hover">
-  <tr>
-    <td>
-        <strong>M.Sc. in Electronic Engineering</strong>
-		(4.14/4.30)
-        <br>
-      National Chung Cheng University | Chiayi
-        <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
-        <br> *<a href="https://ieeexplore.ieee.org/document/9413146/figures#figures">DEN: Disentangling and Exchanging Network for Depth Completion</a>*
-        <br> Advisor: <a href="http://acm.cs.nctu.edu.tw/Member_Home.aspx?Account=chingchun">Ching-Chun Huang</a>
-        </p>
-    </td>
-    <td class="col-md-2" style='text-align:right;'>2017 - 2019</td>
-  </tr>
-  <tr>
-    <td>
-        <strong>B.Sc. in Electronic Engineering</strong>
-        <br>
-      National Kaohsiung University of Applied Sciences | Kaohsiung
-        <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
-        <br> Advisor: <a href="http://ee.nkust.edu.tw/control/jhy-shoung-yaung/">Chih-Hsiung Yang</a>
-        </p>
-    </td>
-    <td class="col-md-2" style='text-align:right;'>2013 - 2017</td>
-  </tr>
-</table>
-
-
-## <i class="fa fa-chevron-right"></i> Honors & Awards
-<table class="table table-hover">
-<tr>
-  <td>
-    <strong>MS THESIS AWARD HONORABLE MENTION in IPPR</strong><br>
-	<p style="color:grey;font-size:1.2rem">
-	You-Feng Wu, Vu-Hoang Tran, Ting-Wei Chang, Wei-Chen Chiu, Ching-Chun Huang, "DEN: Disentangling and Exchanging Network for Depth Completion", International Conference on Pattern Recognition(ICPR), Sep., 2020.<br>
-	<a href="http://140.125.183.142/res/paperaword/13th/IPPR%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%86%E5%8D%9A%E7%A2%A9%E5%A3%AB%E8%AB%96%E6%96%87%E7%8D%8E%E7%8D%B2%E7%8D%8E%E5%85%AC%E5%91%8A-2.pdf">"LINK"</a>
-	</p>
-  </td>
-  <td class='col-md-2' style='text-align:right;'>2020</td>
-</tr>
-<tr>
-  <td>
-    <strong>BEST PAPER AWARD in MAPR</strong><br>
-	<p style="color:grey;font-size:1.2rem">
-		You-Feng Wu, Hoang Tran Vu, Ching-Chun Huang, "Semi-supervised and Multi-task Learning for On-street Parking Space Status Inference", Multimedia Analysis and Pattern Recognition (MAPR), May ., 2019.<br>
-	<a href="http://acm.cs.nctu.edu.tw/News.aspx">"LINK"</a>
-	</p>
-  </td>
-  <td class='col-md-2' style='text-align:right;'>2019</td>
-</tr>
-</table>
-
-
-## <i class="fa fa-chevron-right"></i> Patents
-<table class="table table-hover">
-
-<tr>
-  <td>
-	<p style="font-size:1.5rem">
-		<strong>You-Feng Wu. 2023. General gesture detection method and general gesture detection device. Taiwan Patent I810564, filed May 14, 2022.</strong><br>
-	</p>
-	
-	<p style="font-size:1.2rem">
-	<a href="https://twpat1.tipo.gov.tw/twpatc/twpatengkm?!!FRURLI810564">"LINK"</a>
-	</p>
-	
-  </td>
-  <td class='col-md-2' style='text-align:right;'>2023</td>
-</tr>
-
-<tr>
-  <td>
-	<p style="font-size:1.5rem">
-		<strong>You-Feng Wu. 2022. Headset apparatus with gesture recognition function. Taiwan Patent I786678, filed Jun 11, 2021.</strong><br>
-	</p>
-	
-	<p style="font-size:1.2rem">
-	<a href="https://twpat1.tipo.gov.tw/twpatc/twpatengkm?!!FRURLI786678">"LINK"</a>
-	</p>
-	
-  </td>
-  <td class='col-md-2' style='text-align:right;'>2022</td>
-</tr>
-
-<tr>
-  <td>
-	<p style="font-size:1.5rem">
-		<strong>You-Feng Wu. 2022. Range Doppler angle sensing method and device. Taiwan Patent I756122, filed Apri 30, 2021.</strong><br>
-	</p>
-	
-	<p style="font-size:1.2rem">
-	<a href="https://twpat1.tipo.gov.tw/twpatc/twpatengkm?!!FRURLI756122">"LINK"</a>
-	</p>
-	
-  </td>
-  <td class='col-md-2' style='text-align:right;'>2022</td>
-</tr>
-
-<tr>
-  <td>
-	<p style="font-size:1.5rem">
-		<strong>You-Feng Wu. 2020. IMPULSE-LIKE GESTURE RECOGNITION METHOD, AND IMPULSE-LIKE GESTURE RECOGNITION SYSTEM. Taiwan Patent I748778, filed Dec 1, 2022.</strong><br>
-	</p>
-	
-	<p style="font-size:1.2rem">
-	<a href="https://twpat2.tipo.gov.tw/twpatc/twpatkm?.f3830000002010000003200010000000^050000000A000000402E90440ba">"LINK"</a>
-	</p>
-	
-  </td>
-  <td class='col-md-2' style='text-align:right;'>2022</td>
-</tr>
-<tr>
-  <td>
-	<p style="font-size:1.5rem">
-    <strong>You-Feng Wu. 2020. IMPULSE-LIKE GESTURE RECOGNITION METHOD, AND IMPULSE-LIKE GESTURE RECOGNITION SYSTEM. U.S. Patent 17/084,986, filed Oct 30, 2020. Patent pending.</strong><br>
-	</p>
-  </td>
-  <td class='col-md-2' style='text-align:right;'>2020</td>
-</tr>
-</table>
-
-
-## <i class="fa fa-chevron-right"></i> Publications
-
-<a href="https://scholar.google.com.tw/citations?hl=zh-TW&view_op=list_works&gmla=AJsN-F5cXEm3DcCrNxtM9TcQjGfayIXB1EpvcQM_KRAe9pRiXs8YaUgvpvHdPNWXG_aSHlF8uoMFHSF-7rjGP26BNBDXHKQ0OtM4UYryJS57huM7UUB9FZg&user=0VGDeTUAAAAJ" class="btn btn-primary" style="padding: 0.3em;">
-  <i class="ai ai-google-scholar"></i> Google Scholar
-</a>
-
-<h2>2020</h2>
-<table class="table table-hover">
-
-<tr id="tr-amos2021modelbased" style="background-color: #E5EBF7">
-<td class="col-md-3"><a href='https://github.com/Lilyo/DEN' target='_blank'><img src="images/publications/den.png" onerror="this.style.display='none'" style='border: none;' /></a> </td>
-<td>
-    <em><a href='https://ieeexplore.ieee.org/document/9413146' target='_blank'>DEN: Disentangling and Exchanging Network for Depth Completion</a> </em><br>
-    <strong>You-Feng Wu</strong>, Vu-Hoang Tran, Ting-Wei Chang, Wei-Chen Chiu and Ching-Chun Huang<br>
-    ICPR 2020<br>
-    [1] 
-[<a href='javascript:;'
-    onclick='$("#abs_den").toggle()'>abs</a>] [<a href='https://github.com/Lilyo/DEN' target='_blank'>code</a>] <br>
-    
-<div id="abs_den" style="text-align: justify; display: none" markdown="1">
-In this paper, we tackle the depth completion problem. Conventional depth sensors usually produce incomplete depth maps due to the property of surface reflection, 
-especially for the window areas, metal surfaces, and object boundaries. 
-However, we observe that the corresponding RGB images are still dense and preserve all of the useful structural information. 
-The observation brings us to the question of whether we can borrow this structural information from RGB images to inpaint the corresponding incomplete depth maps. 
-In this paper, we answer that question by proposing a Disentangling and Exchanging Network (DEN) for depth completion. 
-The network is designed based on the assumption that after suitable feature disentanglement, RGB images and depth maps share a common domain for representing structural information. 
-So we firstly disentangle both RGB and depth images into domain-invariant content parts, which contain structural information, and domain-specific style parts. 
-Then, by exchanging the complete structural information extracted from the RGB image with incomplete information extracted from the depth map, we can generate the complete version of the depth map. 
-Furthermore, to address the mixed-depth problem, a newly proposed depth representation is applied. 
-By modeling depth estimation as a classification problem coupled with coefficient estimation, blurry edges are enhanced in the depth map. 
-At last, we have implemented ablation experiments to verify the effectiveness of the proposed DEN model. 
-The results also demonstrate the superiority of DEN over some state-of-the-art approaches.
-
+<div class="news-item">
+  <div class="news-head">
+    <span class="news-title">ML Application: Clone Dual-Bay External Hard Drive Duplicator with In-Air Gesturing</span>
+    <span class="date-badge">Nov. 2020 – Jun. 2021</span>
+  </div>
+  <details class="disclosure">
+    <summary>Intro</summary>
+    <div class="disclosure-body">
+      <p class="news-media"><a href="https://world.taobao.com/item/650812289577.htm" target="_blank" rel="noopener"><img src="/images/application/duplicator.jpg" alt="Dual-bay hard drive duplicator with in-air gesturing" loading="lazy"></a></p>
+    </div>
+  </details>
 </div>
 
-</td>
-</tr>
-
-</table>
-
-<h2>2019</h2>
-<table class="table table-hover">
-
-<tr id="tr-amos2021modelbased" style="background-color: #E5EBF7">
-<td class="col-md-3"><a href='https://github.com/Lilyo/Parking-Space-Inference' target='_blank'><img src="images/publications/multi_task.gif" onerror="this.style.display='none'" style='border: none;' /></a> </td>
-<td>
-    <em><a href='https://ieeexplore.ieee.org/document/8743537' target='_blank'>Semi-supervised and Multi-task Learning for On-street Parking Space Status Inference</a> </em><br>
-    <strong>You-Feng Wu</strong>, Hoang Tran Vu and Ching-Chun Huang<br>
-    MAPR 2019  <br>
-    [2] 
-[<a href='javascript:;'
-    onclick='$("#abs_multi_task").toggle()'>abs</a>] [<a href='https://github.com/Lilyo/Parking-Space-Inference' target='_blank'>code</a>] <br>
-    
-<div id="abs_multi_task" style="text-align: justify; display: none" markdown="1">
-To manage on-street parking spaces, magnetic sensor is often used due to its low cost and flexibility in installation and usage. 
-However, its signals are easily affected by environment, vehicle type, installation location and moving neighboring vehicles. 
-Besides, accidental installation also leads to non-unified coordinate of magnetic sensors which makes the management system difficult to recognize. 
-To overcome these challenges, we proposed a novel semi-supervised and multi-task learning framework for sensor based on-street parking slot inference with three contributions. 
-First, a Coordinate Transform Module is integrated into our framework to reduce the diversity of input signals by transforming them adaptively into a unified coordinate. 
-Second, to learn the generalized and discriminative features while minimizing the amount of labeled data, we introduce a Multi-task Module to leverage the information from both labeled and unlabeled data. 
-Third, we embed a Temporal Module, which observes and memorizes the parking states from time to time, to infer parking space status in a reliable way. 
-The experimental results show that, with the proposed three modules, our end-to-end training framework could reduce the error detection and hence improve the system accuracy.
+<div class="news-item">
+  <div class="news-head">
+    <span class="news-title">JMicron · KaiKuTeK: Revolutionary Gesture Recognition 60GHz mmWave Radar Solution</span>
+    <span class="date-badge">2021</span>
+  </div>
+  <details class="disclosure">
+    <summary>Intro</summary>
+    <div class="disclosure-body">
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/Ix9PY89ML90" title="KaiKuTeK 60GHz mmWave radar gesture recognition" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </details>
 </div>
 
-</td>
-</tr>
+</section>
+{:/nomarkdown}
 
-</table>
+{::nomarkdown}
+<section class="cv-section" id="experience">
+<h2 class="section-title"><i class="fa fa-briefcase"></i> Experience</h2>
+<div class="timeline">
 
+<article class="xp-item">
+  <h3 class="xp-company">Artilux Inc. <span class="xp-loc">Hsinchu</span></h3>
+  <div class="xp-role">
+    <span class="xp-title">Principal Engineer</span>
+    <span class="date-badge">Feb. 2026 – Present</span>
+  </div>
+  <div class="xp-role">
+    <span class="xp-title">Senior Software Engineer</span>
+    <span class="date-badge">Mar. 2022 – Feb. 2026</span>
+  </div>
+  <div class="xp-detail">
+    <span class="xp-detail-label">Research Field</span>
+    <ul>
+      <li>Time-gated SPAD</li>
+      <li>Depth Completion</li>
+      <li>Neural SLAM</li>
+      <li>On-device AI inferencing</li>
+    </ul>
+  </div>
+</article>
 
-## <i class="fa fa-chevron-right"></i> Selected Projects
+<article class="xp-item">
+  <h3 class="xp-company">KaiKuTeK Inc. <span class="xp-loc">Taipei</span></h3>
+  <div class="xp-role">
+    <span class="xp-title">Machine Learning Engineer</span>
+    <span class="date-badge">Feb. 2020 – Mar. 2022</span>
+  </div>
+  <div class="xp-detail">
+    <span class="xp-detail-label">Research Field</span>
+    <ul>
+      <li>Sub-actions exploration</li>
+      <li>Rapid gesture recognition</li>
+      <li>Temporal coherency</li>
+    </ul>
+  </div>
+  <div class="xp-detail">
+    <span class="xp-detail-label">SDK Machine Learning Team Leader</span>
+    <ul>
+      <li>Customer support and team leadership</li>
+      <li>Deployed Python API to AWS cloud training platform</li>
+    </ul>
+  </div>
+</article>
 
-<h2>2018</h2>
-<table class="table table-hover">
+<article class="xp-item">
+  <div class="xp-role">
+    <span class="xp-title">Military Service in Taiwan</span>
+    <span class="date-badge">Oct. 2019 – Feb. 2020</span>
+  </div>
+</article>
 
-<tr id="tr-amos2021modelbased" style="background-color: #E5EBF7">
-<td class="col-md-3"><a href='https://lilyo.github.io/' target='_blank'><img src="images/publications/cvae.png" onerror="this.style.display='none'" style='border: none;' /></a> </td>
-<td>
-    <em><a href='https://lilyo.github.io/' target='_blank'>Scene understanding based navigation system upon deep inference learning</a> </em><br>
-    Ting-Wei Lin, Shu-Hsien Huang, <strong>You-Feng Wu</strong> and Ching-Chun Huang<br>
-     Feb. 2018 - Jun. 2018 <br>
-    [3] 
-[<a href='javascript:;'
-    onclick='$("#abs_cvae").toggle()'>abs</a>]<br>
-    
-<div id="abs_cvae" style="text-align: justify; display: none" markdown="1">
-Traditionally, Sampling based motion planning (SBMP) has emerged as a successful algorithmic paradigm for solving high
-dimensional, complex, and dynamically constrained motion planning problems.
-However, the performance of SBMP is tied to the placement of samples in these promising regions, a result uniform sampling is only
-able to achieve through sheer exhaustion.
-We proposed a methodology for non uniform sampling which can improve the convergence speed of traditional particle based scattering algorithm
+<article class="xp-item">
+  <h3 class="xp-company">KaiKuTeK Inc. <span class="xp-loc">Taipei</span></h3>
+  <div class="xp-role">
+    <span class="xp-title">Machine Learning Research Intern</span>
+    <span class="date-badge">Jul. 2019 – Oct. 2019</span>
+  </div>
+  <div class="xp-detail">
+    <span class="xp-detail-label">Research Field</span>
+    <ul>
+      <li>Long-Tailed Object Recognition</li>
+      <li>Few-shot Learning</li>
+    </ul>
+  </div>
+</article>
+
 </div>
-</td>
-</tr>
+</section>
+{:/nomarkdown}
 
-<tr id="tr-amos2021modelbased" style="background-color: #E5EBF7">
-<td class="col-md-3"><a href='https://lilyo.github.io/' target='_blank'><img src="images/publications/medical_segmentation.png" onerror="this.style.display='none'" style='border: none;' /></a> </td>
-<td>
-    <em><a href='https://lilyo.github.io/' target='_blank'>Inception U-net based medical image segmentation.</a> </em><br>
-    <strong>You-Feng Wu</strong> and Ching-Chun Huang<br>
-    Jul. 2017 - Feb. 2018  <br>
-    [4] 
-[<a href='javascript:;'
-    onclick='$("#abs_seg").toggle()'>abs</a>]<br>
-    
-<div id="abs_seg" style="text-align: justify; display: none" markdown="1">
-Most of the image segmentation task is completed by U net. For better performance, we combine U-net and inception module for retina segmentation
+{::nomarkdown}
+<section class="cv-section" id="education">
+<h2 class="section-title"><i class="fa fa-graduation-cap"></i> Education</h2>
+
+<div class="row-item">
+  <div class="row-main">
+    <h3>M.Sc. in Electronic Engineering</h3>
+    <p class="row-sub">National Chung Cheng University · Chiayi · GPA 4.14 / 4.30</p>
+    <p class="row-cite">
+      Thesis: <a href="https://ieeexplore.ieee.org/document/9413146" target="_blank" rel="noopener"><em>DEN: Disentangling and Exchanging Network for Depth Completion</em></a><br>
+      Advisor: <a href="https://www.cs.nycu.edu.tw/members/detail/chingchun" target="_blank" rel="noopener">Ching-Chun Huang</a>
+    </p>
+  </div>
+  <span class="date-badge">2017 – 2019</span>
 </div>
 
-</td>
-</tr>
-
-</table>
-
-<h2>2017</h2>
-<table class="table table-hover">
-
-<tr id="tr-amos2021modelbased" style="background-color: #E5EBF7">
-<td class="col-md-3"><a href='https://github.com/Lilyo/EBMA' target='_blank'><img src="images/publications/ebma.gif" onerror="this.style.display='none'" style='border: none;' /></a> </td>
-<td>
-    <em><a href='https://github.com/Lilyo/EBMA' target='_blank'>The Study of Integer-/Half-Pixel Exhaustive Block Matching Algorithm for Motion Estimation.</a> </em><br>
-    <strong>You-Feng Wu</strong> and Jui-Chiu Chiang<br>
-    Nov. 2017<br>
-    [5] 
-[<a href='javascript:;'
-    onclick='$("#abs_ebma").toggle()'>abs</a>] [<a href='https://github.com/Lilyo/EBMA' target='_blank'>code</a>] <br>
-    
-<div id="abs_ebma" style="text-align: justify; display: none" markdown="1">
-Assume that the adjacent frames are similar and change are due to object or camera motion, we can predict a new frame from a previous frame and only code the prediction error.
+<div class="row-item">
+  <div class="row-main">
+    <h3>B.Sc. in Electronic Engineering</h3>
+    <p class="row-sub">National Kaohsiung University of Applied Sciences · Kaohsiung</p>
+    <p class="row-cite">Advisor: Chih-Hsiung Yang</p>
+  </div>
+  <span class="date-badge">2013 – 2017</span>
 </div>
 
-</td>
-</tr>
+</section>
+{:/nomarkdown}
 
-<tr id="tr-amos2021modelbased" style="background-color: #E5EBF7">
-<td class="col-md-3"><a href='http://acm.cs.nctu.edu.tw/Demo.aspx?c=4' target='_blank'><img src="images/publications/slam.gif" onerror="this.style.display='none'" style='border: none;' /></a> </td>
-<td>
-    <em><a href='http://acm.cs.nctu.edu.tw/Demo.aspx?c=4' target='_blank'>ORB-SLAM2 runs in real-time on an NVIDIA Jetson TX2.</a> </em><br>
-    <strong>You-Feng Wu</strong> and Ching-Chun Huang<br>
-    Feb. 2017 - Nov. 2017<br>
-	MOST-107-2622-E194-007-CC3<br>
-    [6] 
-[<a href='javascript:;'
-    onclick='$("#abs_slam").toggle()'>abs</a>] [<a href='https://www.youtube.com/watch?v=LuUTbhfWlVQ' target='_blank'>video</a>]<br>
-    
-<div id="abs_slam" style="text-align: justify; display: none" markdown="1">
-Nowadays, there are many service robots in the market; however, only few of them become a popular product. 
-Among them, the vacuum cleaning robot might be the most successful one and treated as the key entry point toward the future market of service robots. 
-In order to enable the intelligent function in a cleaning robot, the ability for a robot to Simultaneous Localization and Mapping (SLAM) is the fundamental and critical step. 
-Hence, in this project, we aim to study and implement the SLAM algorithm in a cleaning robot.
+{::nomarkdown}
+<section class="cv-section" id="honors">
+<h2 class="section-title"><i class="fa fa-trophy"></i> Honors &amp; Awards</h2>
+
+<div class="row-item">
+  <div class="row-main">
+    <h3>M.S. Thesis Award, Honorable Mention — IPPR</h3>
+    <p class="row-cite">You-Feng Wu, Vu-Hoang Tran, Ting-Wei Chang, Wei-Chen Chiu, Ching-Chun Huang, "DEN: Disentangling and Exchanging Network for Depth Completion", International Conference on Pattern Recognition (ICPR), Sep. 2020.</p>
+  </div>
+  <span class="date-badge">2020</span>
 </div>
 
-</td>
-</tr>
+<div class="row-item">
+  <div class="row-main">
+    <h3>Best Paper Award — MAPR</h3>
+    <p class="row-cite">You-Feng Wu, Hoang Tran Vu, Ching-Chun Huang, "Semi-supervised and Multi-task Learning for On-street Parking Space Status Inference", Multimedia Analysis and Pattern Recognition (MAPR), May 2019.</p>
+  </div>
+  <span class="date-badge">2019</span>
+</div>
 
-</table>
+</section>
+{:/nomarkdown}
 
+{::nomarkdown}
+<section class="cv-section" id="patents">
+<h2 class="section-title"><i class="fa fa-certificate"></i> Patents</h2>
 
-## <i class="fa fa-chevron-right"></i> Invited Talks
-<table class="table table-hover">
-<tr>
-  <td>
-        <strong>Machine Learning Course - Fine-tuning : Essential Training</strong><br>
-		Artificial intelligence and machine learning are changing the world. In this lecture, we are going to introduce: (1)Everything a marketer needs to know about machine learning, (2) How to efficiently fine-tune model.
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2021</td>
-</tr>
-</table>
+<div class="row-item">
+  <div class="row-main">
+    <h3>General gesture detection method and general gesture detection device</h3>
+    <p class="row-cite">You-Feng Wu. 2023. Taiwan Patent I810564, filed May 14, 2021.</p>
+    <a class="chip-link" href="https://patents.google.com/patent/TWI810564B/en" target="_blank" rel="noopener"><i class="fa fa-external-link"></i> Google Patents</a>
+  </div>
+  <span class="date-badge">2023</span>
+</div>
 
+<div class="row-item">
+  <div class="row-main">
+    <h3>Headset apparatus with gesture recognition function</h3>
+    <p class="row-cite">You-Feng Wu. 2022. Taiwan Patent I786678, filed Jun. 11, 2021.</p>
+    <a class="chip-link" href="https://patents.google.com/patent/TWI786678B/en" target="_blank" rel="noopener"><i class="fa fa-external-link"></i> Google Patents</a>
+  </div>
+  <span class="date-badge">2022</span>
+</div>
 
-## <i class="fa fa-chevron-right"></i> Skills
-<table class="table table-hover">
-<tr>
-  <td class='col-md-2'>Programming Languages</td>
-  <td>
-Python, MATLAB, C, C++, JAVA
-  </td>
-</tr>
-<tr>
-  <td class='col-md-2'>Deep Learning Frameworks</td>
-  <td>
-PyTorch, TensorFlow, Caffe
-  </td>
-</tr>
-<tr>
-  <td class='col-md-2'>GUI Tools</td>
-  <td>
-PyQt5, wxPython
-  </td>
-</tr>
-<tr>
-  <td class='col-md-2'>Misc.</td>
-  <td>
-Linux, vim, git, tmux, LATEX
-  </td>
-</tr>
-</table>
+<div class="row-item">
+  <div class="row-main">
+    <h3>Range Doppler angle sensing method and device</h3>
+    <p class="row-cite">You-Feng Wu. 2022. Taiwan Patent I756122, filed Apr. 30, 2021.</p>
+    <a class="chip-link" href="https://patents.google.com/patent/TWI756122B/en" target="_blank" rel="noopener"><i class="fa fa-external-link"></i> Google Patents</a>
+  </div>
+  <span class="date-badge">2022</span>
+</div>
+
+<div class="row-item">
+  <div class="row-main">
+    <h3>Impulse-like gesture recognition method and impulse-like gesture recognition system</h3>
+    <p class="row-cite">You-Feng Wu. 2021. Taiwan Patent I748778, filed Dec. 2, 2020.</p>
+    <a class="chip-link" href="https://patents.google.com/patent/TWI748778B/en" target="_blank" rel="noopener"><i class="fa fa-external-link"></i> Google Patents</a>
+  </div>
+  <span class="date-badge">2021</span>
+</div>
+
+<div class="row-item">
+  <div class="row-main">
+    <h3>Impulse-like gesture recognition method and impulse-like gesture recognition system</h3>
+    <p class="row-cite">You-Feng Wu. 2020. U.S. Patent Application 17/084,986, filed Oct. 30, 2020. Patent pending.</p>
+  </div>
+  <span class="date-badge">2020</span>
+</div>
+
+</section>
+{:/nomarkdown}
+
+{::nomarkdown}
+<section class="cv-section" id="publications">
+<h2 class="section-title"><i class="fa fa-book"></i> Publications</h2>
+
+<p><a class="chip-link" href="https://scholar.google.com.tw/citations?user=0VGDeTUAAAAJ" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i> Google Scholar</a></p>
+
+<span class="year-chip">2020</span>
+
+<article class="pub-card">
+  <a class="pub-thumb" href="https://github.com/Lilyo/DEN" target="_blank" rel="noopener">
+    <img src="/images/publications/den.png" alt="DEN depth completion results" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <a class="pub-title" href="https://ieeexplore.ieee.org/document/9413146" target="_blank" rel="noopener">DEN: Disentangling and Exchanging Network for Depth Completion</a>
+    <p class="pub-authors"><strong>You-Feng Wu</strong>, Vu-Hoang Tran, Ting-Wei Chang, Wei-Chen Chiu and Ching-Chun Huang</p>
+    <p class="pub-venue">ICPR 2020</p>
+    <div class="pub-links">
+      <details class="disclosure">
+        <summary>Abstract</summary>
+        <div class="disclosure-body">
+          <p>In this paper, we tackle the depth completion problem. Conventional depth sensors usually produce incomplete depth maps due to the property of surface reflection,
+          especially for the window areas, metal surfaces, and object boundaries.
+          However, we observe that the corresponding RGB images are still dense and preserve all of the useful structural information.
+          The observation brings us to the question of whether we can borrow this structural information from RGB images to inpaint the corresponding incomplete depth maps.
+          In this paper, we answer that question by proposing a Disentangling and Exchanging Network (DEN) for depth completion.
+          The network is designed based on the assumption that after suitable feature disentanglement, RGB images and depth maps share a common domain for representing structural information.
+          So we firstly disentangle both RGB and depth images into domain-invariant content parts, which contain structural information, and domain-specific style parts.
+          Then, by exchanging the complete structural information extracted from the RGB image with incomplete information extracted from the depth map, we can generate the complete version of the depth map.
+          Furthermore, to address the mixed-depth problem, a newly proposed depth representation is applied.
+          By modeling depth estimation as a classification problem coupled with coefficient estimation, blurry edges are enhanced in the depth map.
+          At last, we have implemented ablation experiments to verify the effectiveness of the proposed DEN model.
+          The results also demonstrate the superiority of DEN over some state-of-the-art approaches.</p>
+        </div>
+      </details>
+      <a class="chip-link" href="https://github.com/Lilyo/DEN" target="_blank" rel="noopener"><i class="fa fa-github"></i> Code</a>
+    </div>
+  </div>
+</article>
+
+<span class="year-chip">2019</span>
+
+<article class="pub-card">
+  <a class="pub-thumb" href="https://github.com/Lilyo/Parking-Space-Inference" target="_blank" rel="noopener">
+    <img src="/images/publications/multi_task.gif" alt="On-street parking space status inference" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <a class="pub-title" href="https://ieeexplore.ieee.org/document/8743537" target="_blank" rel="noopener">Semi-supervised and Multi-task Learning for On-street Parking Space Status Inference</a>
+    <p class="pub-authors"><strong>You-Feng Wu</strong>, Hoang Tran Vu and Ching-Chun Huang</p>
+    <p class="pub-venue">MAPR 2019</p>
+    <div class="pub-links">
+      <details class="disclosure">
+        <summary>Abstract</summary>
+        <div class="disclosure-body">
+          <p>To manage on-street parking spaces, magnetic sensor is often used due to its low cost and flexibility in installation and usage.
+          However, its signals are easily affected by environment, vehicle type, installation location and moving neighboring vehicles.
+          Besides, accidental installation also leads to non-unified coordinate of magnetic sensors which makes the management system difficult to recognize.
+          To overcome these challenges, we proposed a novel semi-supervised and multi-task learning framework for sensor based on-street parking slot inference with three contributions.
+          First, a Coordinate Transform Module is integrated into our framework to reduce the diversity of input signals by transforming them adaptively into a unified coordinate.
+          Second, to learn the generalized and discriminative features while minimizing the amount of labeled data, we introduce a Multi-task Module to leverage the information from both labeled and unlabeled data.
+          Third, we embed a Temporal Module, which observes and memorizes the parking states from time to time, to infer parking space status in a reliable way.
+          The experimental results show that, with the proposed three modules, our end-to-end training framework could reduce the error detection and hence improve the system accuracy.</p>
+        </div>
+      </details>
+      <a class="chip-link" href="https://github.com/Lilyo/Parking-Space-Inference" target="_blank" rel="noopener"><i class="fa fa-github"></i> Code</a>
+    </div>
+  </div>
+</article>
+
+</section>
+{:/nomarkdown}
+
+{::nomarkdown}
+<section class="cv-section" id="projects">
+<h2 class="section-title"><i class="fa fa-flask"></i> Selected Projects</h2>
+
+<span class="year-chip">2018</span>
+
+<article class="pub-card">
+  <span class="pub-thumb">
+    <img src="/images/publications/cvae.png" alt="Scene understanding based navigation system" loading="lazy">
+  </span>
+  <div class="pub-body">
+    <span class="pub-title">Scene understanding based navigation system upon deep inference learning</span>
+    <p class="pub-authors">Ting-Wei Lin, Shu-Hsien Huang, <strong>You-Feng Wu</strong> and Ching-Chun Huang</p>
+    <p class="pub-venue">Feb. 2018 – Jun. 2018</p>
+    <div class="pub-links">
+      <details class="disclosure">
+        <summary>Abstract</summary>
+        <div class="disclosure-body">
+          <p>Traditionally, Sampling based motion planning (SBMP) has emerged as a successful algorithmic paradigm for solving high
+          dimensional, complex, and dynamically constrained motion planning problems.
+          However, the performance of SBMP is tied to the placement of samples in these promising regions, a result uniform sampling is only
+          able to achieve through sheer exhaustion.
+          We proposed a methodology for non uniform sampling which can improve the convergence speed of traditional particle based scattering algorithm.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</article>
+
+<article class="pub-card">
+  <span class="pub-thumb">
+    <img src="/images/publications/medical_segmentation.png" alt="Inception U-net medical image segmentation" loading="lazy">
+  </span>
+  <div class="pub-body">
+    <span class="pub-title">Inception U-net based medical image segmentation</span>
+    <p class="pub-authors"><strong>You-Feng Wu</strong> and Ching-Chun Huang</p>
+    <p class="pub-venue">Jul. 2017 – Feb. 2018</p>
+    <div class="pub-links">
+      <details class="disclosure">
+        <summary>Abstract</summary>
+        <div class="disclosure-body">
+          <p>Most of the image segmentation task is completed by U-net. For better performance, we combine U-net and inception module for retina segmentation.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</article>
+
+<span class="year-chip">2017</span>
+
+<article class="pub-card">
+  <a class="pub-thumb" href="https://github.com/Lilyo/EBMA" target="_blank" rel="noopener">
+    <img src="/images/publications/ebma.gif" alt="Exhaustive block matching algorithm demo" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <a class="pub-title" href="https://github.com/Lilyo/EBMA" target="_blank" rel="noopener">The Study of Integer-/Half-Pixel Exhaustive Block Matching Algorithm for Motion Estimation</a>
+    <p class="pub-authors"><strong>You-Feng Wu</strong> and Jui-Chiu Chiang</p>
+    <p class="pub-venue">Nov. 2017</p>
+    <div class="pub-links">
+      <details class="disclosure">
+        <summary>Abstract</summary>
+        <div class="disclosure-body">
+          <p>Assume that the adjacent frames are similar and change are due to object or camera motion, we can predict a new frame from a previous frame and only code the prediction error.</p>
+        </div>
+      </details>
+      <a class="chip-link" href="https://github.com/Lilyo/EBMA" target="_blank" rel="noopener"><i class="fa fa-github"></i> Code</a>
+    </div>
+  </div>
+</article>
+
+<article class="pub-card">
+  <a class="pub-thumb" href="https://www.youtube.com/watch?v=LuUTbhfWlVQ" target="_blank" rel="noopener">
+    <img src="/images/publications/slam.gif" alt="ORB-SLAM2 running on NVIDIA Jetson TX2" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <a class="pub-title" href="https://www.youtube.com/watch?v=LuUTbhfWlVQ" target="_blank" rel="noopener">ORB-SLAM2 runs in real-time on an NVIDIA Jetson TX2</a>
+    <p class="pub-authors"><strong>You-Feng Wu</strong> and Ching-Chun Huang</p>
+    <p class="pub-venue">Feb. 2017 – Nov. 2017 · MOST-107-2622-E194-007-CC3</p>
+    <div class="pub-links">
+      <details class="disclosure">
+        <summary>Abstract</summary>
+        <div class="disclosure-body">
+          <p>Nowadays, there are many service robots in the market; however, only few of them become a popular product.
+          Among them, the vacuum cleaning robot might be the most successful one and treated as the key entry point toward the future market of service robots.
+          In order to enable the intelligent function in a cleaning robot, the ability for a robot to Simultaneous Localization and Mapping (SLAM) is the fundamental and critical step.
+          Hence, in this project, we aim to study and implement the SLAM algorithm in a cleaning robot.</p>
+        </div>
+      </details>
+      <a class="chip-link" href="https://www.youtube.com/watch?v=LuUTbhfWlVQ" target="_blank" rel="noopener"><i class="fa fa-youtube-play"></i> Video</a>
+    </div>
+  </div>
+</article>
+
+</section>
+{:/nomarkdown}
+
+{::nomarkdown}
+<section class="cv-section" id="talks">
+<h2 class="section-title"><i class="fa fa-microphone"></i> Invited Talks</h2>
+
+<div class="row-item">
+  <div class="row-main">
+    <h3>Machine Learning Course — Fine-tuning: Essential Training</h3>
+    <p class="row-cite">Artificial intelligence and machine learning are changing the world. In this lecture, we are going to introduce: (1) everything a marketer needs to know about machine learning, and (2) how to efficiently fine-tune a model.</p>
+  </div>
+  <span class="date-badge">2021</span>
+</div>
+
+</section>
+{:/nomarkdown}
+
+{::nomarkdown}
+<section class="cv-section" id="skills">
+<h2 class="section-title"><i class="fa fa-wrench"></i> Skills</h2>
+
+<div class="skill-row">
+  <span class="skill-label">Programming Languages</span>
+  <div class="chip-group">
+    <span class="chip">Python</span>
+    <span class="chip">MATLAB</span>
+    <span class="chip">C</span>
+    <span class="chip">C++</span>
+    <span class="chip">Java</span>
+  </div>
+</div>
+
+<div class="skill-row">
+  <span class="skill-label">Deep Learning Frameworks</span>
+  <div class="chip-group">
+    <span class="chip">PyTorch</span>
+    <span class="chip">TensorFlow</span>
+    <span class="chip">Caffe</span>
+  </div>
+</div>
+
+<div class="skill-row">
+  <span class="skill-label">GUI Tools</span>
+  <div class="chip-group">
+    <span class="chip">PyQt5</span>
+    <span class="chip">wxPython</span>
+  </div>
+</div>
+
+<div class="skill-row">
+  <span class="skill-label">Misc.</span>
+  <div class="chip-group">
+    <span class="chip">Linux</span>
+    <span class="chip">vim</span>
+    <span class="chip">git</span>
+    <span class="chip">tmux</span>
+    <span class="chip">LaTeX</span>
+  </div>
+</div>
+
+</section>
+{:/nomarkdown}
