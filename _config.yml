@@ -1,7 +1,7 @@
 name: You-Feng Wu
-url: https://lilyo.github.io/wyf-Arthur.github.io/
+description: "Personal website and CV of You-Feng (Arthur) Wu — Principal Engineer at Artilux working on machine learning and computer vision."
+url: https://lilyo.github.io
 destination: ./_site
-twitter: brandondamos
 lsi: false
 port: 4000
 markdown: kramdown
@@ -11,16 +11,13 @@ kramdown:
   syntax_highlighter: rouge
 permalink: pretty
 #paginate: 5
-gems:
+plugins:
   - jekyll-sitemap
 
 exclude:
-  - .travis.yml
-  - validate.rb
   - README.md
   - Gemfile
   - Gemfile.lock
   - bower_components
-  - update-vendor-deps.sh
   - vendor/bundle
-  - vendor/bower.json
+  - settup.txt

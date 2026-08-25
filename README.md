@@ -1,10 +1,22 @@
-[![Build Status](https://travis-ci.org/lilyo/lilyo.github.io.svg?branch=release)](https://travis-ci.org/lilyo/lilyo.github.io)
+# lilyo.github.io
 
-# About
-This is the source code for bamos personal website.
-Unless stated otherwise, all content is MIT-licensed,
-and some of the CV portions are created with the code
-in the [bamos/cv](https://github.com/bamos/cv) repo.
+Source code for the personal website and CV of You-Feng (Arthur) Wu,
+live at **<https://lilyo.github.io/>**.
 
-# Personal website
-[Personal website](https://lilyo.github.io/)
+Built with [Jekyll](https://jekyllrb.com/) and served by GitHub Pages
+from the `release` branch.
+
+## Local development
+
+```
+bundle install
+bundle exec jekyll serve
+```
+
+Then open <http://localhost:4000>.
+
+## License
+
+MIT (see `LICENSE.mit`). The site started from
+[bamos/bamos.github.io](https://github.com/bamos/bamos.github.io)
+and has since been redesigned.
