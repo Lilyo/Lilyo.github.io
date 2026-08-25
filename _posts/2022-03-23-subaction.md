@@ -8,31 +8,31 @@ tags: [Linux,Python]
 
 ---
 <div id="" style="text-align: justify;" markdown="1">
-This article introduces how I designed *Node Attention Module* from scratch under certain conditions. 
-Our goal is to provide a plug-and-play module to extract sub-actions upon any existing action detection approaches.
+This article introduces how I designed the *Node Attention Module* from scratch under certain constraints. 
+Our goal is to provide a plug-and-play module that extracts sub-actions on top of any existing action detection approach.
 </div>
 ---
 
 <a id="fig1"></a>
 {% include image.html
    img="/data/subaction/demo.gif"
-   caption="Fig. 1, [[19][Hou_2017_BMVC]] A complex human activity usually is sub-divided into unit-actions."
+   caption="Fig. 1: A complex human activity is usually sub-divided into unit-actions [[19][Hou_2017_BMVC]]."
 %}
 
 
 
 <div id="" style="text-align: center;" markdown="1">
-__An one-fits-all HCI solution extracts generic sub-actions that shared across dataset.__
+__A one-size-fits-all HCI solution extracts generic sub-actions that are shared across datasets.__
 </div>
 
 <div id="" style="text-align: justify;" markdown="1">
-Deep Learning models are state-of-the-art for action recognition tasks but frequently treat the complex activities as the singular objectives
-and lack interpretability. Therefore, recent works started to tackle the problem of exploration of sub-actions in complex activities. 
-In this article, we introduce a novel approach to explore the temporal structure of detected action instances by explicitly modeling 
-sub-actions and benefit from them. To this end, we propose to learn sub-actions as latent concepts and explore sub-actions via *Node Attention Module (NAM)*. 
+Deep learning models are state-of-the-art for action recognition tasks, but they frequently treat complex activities as singular objectives
+and lack interpretability. Therefore, recent works have started to tackle the problem of exploring sub-actions in complex activities. 
+In this article, we introduce a novel approach that explores the temporal structure of detected action instances by explicitly modeling 
+sub-actions and benefiting from them. To this end, we propose to learn sub-actions as latent concepts and to explore them via the *Node Attention Module (NAM)*. 
 The proposed method maps both visual and temporal representations to a latent space where the sub-actions are learned discriminatively in an end-to-end fashion. 
-The result is a set of latent vectors that can be interpreted as cluster centers in the embedding space. *NAM* is highly modular and extendable. 
-It can be easily combined with exist deep learning model for various other video-related tasks in the future. 
+The result is a set of latent vectors that can be interpreted as cluster centers in the embedding space. *NAM* is highly modular and extensible, 
+and can easily be combined with existing deep learning models for various other video-related tasks in the future. 
 </div>
 
 ---
@@ -42,33 +42,33 @@ It can be easily combined with exist deep learning model for various other video
 <a id="fig2"></a>
 {% include image.html
    img="/data/subaction/hussein2019videograph.png"
-   caption="Fig. 2, [[3][hussein2019videograph]] The activity of “preparing coffee” can be represented as undirected graph of unit-actions."
+   caption="Fig. 2: The activity of “preparing coffee” can be represented as an undirected graph of unit-actions [[3][hussein2019videograph]]."
 %}
 
 <div id="" style="text-align: justify;" markdown="1">
-In recent years, deep learning has dominated many computer vision tasks, especially in action recognition, 
-which is an important research filed to study almost all real-world videos contain multiple actions, and each action is composed of several sub-actions. As shown in <a href="#fig2">Fig.2</a>, 
-[[3][hussein2019videograph], [17][Piergiovanni2017Subevents], [14][Piergiovanni_2018_CVPR]], for instance, the activity of "preparing coffee" can be represented as undirected graph of unit-actions,
- include "take cup", "pour coffee", "pour sugar" and "stir coffee".
+In recent years, deep learning has dominated many computer vision tasks, especially action recognition — an important research field, 
+since almost all real-world videos contain multiple actions, and each action is composed of several sub-actions 
+[[3][hussein2019videograph], [17][Piergiovanni2017Subevents], [14][Piergiovanni_2018_CVPR]]. As shown in <a href="#fig2">Fig. 2</a>, for instance, the activity of "preparing coffee" can be represented as an undirected graph of unit-actions,
+ including "take cup", "pour coffee", "pour sugar", and "stir coffee".
 
 <a id="fig3"></a>
 {% include image.html
    img="/data/subaction/Piergiovanni2017Subevents.png"
-   caption="Fig. 3, [[17][Piergiovanni2017Subevents]] In the video of a basketball game, shooting and blocking events must occur near-by."
+   caption="Fig. 3: In a video of a basketball game, shooting and blocking events must occur nearby [[17][Piergiovanni2017Subevents]]."
 %}
 
-Furthermore, detecting the frames of one activity in the video should benefit from information in the frames corresponding to another activity.
-As shown in <a href="#fig3">Fig.3</a>, a block event cannot occur without a shot event.
+Furthermore, detecting the frames of one activity in a video should benefit from information in the frames corresponding to another activity.
+As shown in <a href="#fig3">Fig. 3</a>, a blocking event cannot occur without a shooting event.
 
 
 
 <a id="fig4"></a>
 {% include image.html
    img="/data/subaction/Huang2021Modeling.png"
-   caption="Fig. 4, [[16][Huang2021Modeling]] Different action instances can share similar motion patterns."
+   caption="Fig. 4: Different action instances can share similar motion patterns [[16][Huang2021Modeling]]."
 %}
-By the same token, a complex action is inherently the temporal composition of sub-actions, which means sub-actions may have contextual relations, or in other words, sub-actions of the same action should simultaneously appear in the corresponding video.
-As shown in <a href="#fig4">Fig.4</a>, e.g., the “jump” sub-action in the red box will always appear in its intra-class instances, and also be shared across several action as well.
+By the same token, a complex action is inherently a temporal composition of sub-actions, which means sub-actions may have contextual relations — in other words, sub-actions of the same action should appear together in the corresponding video.
+As shown in <a href="#fig4">Fig. 4</a>, for example, the “jump” sub-action in the red box always appears in its intra-class instances and is also shared across several actions.
 
 </div>
 
@@ -76,12 +76,12 @@ As shown in <a href="#fig4">Fig.4</a>, e.g., the “jump” sub-action in the re
 
 ### Challenges
 
-Action recognition is the problem of identifying events performed by humans given a video input, there are two primary challenges:
-+ Many high-level activities are often composed of multiple temporal parts with different duration/speed.
+Action recognition is the problem of identifying events performed by humans given a video input. There are two primary challenges:
++ Many high-level activities are composed of multiple temporal parts with different durations and speeds.
 
-	--> **Implicitly modeling sub-action to preserve essential properties**
+	--> **Implicitly model sub-actions to preserve their essential properties**
 
-+ Usually given video- /frame- level category labels, the sub-actions are undefined and not annotated. 
++ Usually, only video- or frame-level category labels are given; the sub-actions are undefined and not annotated. 
 
 	--> **Represent video features via a group of sub-actions, i.e., the sub-action family.**
 
@@ -89,15 +89,15 @@ Action recognition is the problem of identifying events performed by humans give
 
 ### Problem Formulation
 
-**We would like to perform frame-wise inference.** Existing approaches try to explore sub-actions from a given video frame 
-[[17][Piergiovanni2017Subevents], [14][Piergiovanni_2018_CVPR]], or given video segments [[15][Long_2019_CVPR], [12][swetha2021unsupervised]]. 
-Among them, those approaches using video segments as input need to rely on multiple timestamp inputs to extract features, which means that several timestamp information must be considered as input to capture context from adjacent frames. 
+**We would like to perform frame-wise inference.** Existing approaches explore sub-actions from a given video frame 
+[[17][Piergiovanni2017Subevents], [14][Piergiovanni_2018_CVPR]] or from given video segments [[15][Long_2019_CVPR], [12][swetha2021unsupervised]]. 
+Among them, the approaches that take video segments as input rely on multiple timestamps to extract features, which means that information from several timestamps must be considered to capture context from adjacent frames. 
 
 
-Learning to represent videos is important. It requires embedding spatial and temporal information in a series of frames. 
-Convolutional Neural Network (CNN) followed with a Recurrent Neural Network (RNN) is a backbone network widely used to extract spatiotemporal information. 
-In the past few years, some research tend to extract spatiotemporal information through 3D convolutional networks have gradually received a great amount of attention, such as I3D [[18][Carreira_2017_CVPR]]. 
-In this article, we tend to use recursive-based methods (such as CNN with RNN) instead of 3D convolutional networks since consideration of the efficiency of real-time per-frame inference and the model size.
+Learning to represent videos is important; it requires embedding the spatial and temporal information of a series of frames. 
+A Convolutional Neural Network (CNN) followed by a Recurrent Neural Network (RNN) is a backbone widely used to extract spatiotemporal information. 
+In the past few years, extracting spatiotemporal information with 3D convolutional networks, such as I3D [[18][Carreira_2017_CVPR]], has also received a great deal of attention. 
+In this article, we adopt recurrent methods (i.e., a CNN followed by an RNN) instead of 3D convolutional networks, in consideration of the efficiency of real-time per-frame inference and the model size.
 
 ---
 
@@ -109,28 +109,28 @@ In this article, we tend to use recursive-based methods (such as CNN with RNN) i
 <a id="fig5"></a>
 {% include image.html
    img="/data/subaction/hussein2019videograph2.png"
-   caption="Fig. 5, [[3][hussein2019videograph]]."
+   caption="Fig. 5: Illustration from [[3][hussein2019videograph]]."
 %}
 
-Inspired by [[3][hussein2019videograph]], in a dataset of human activities, unit-actions can be thought of as the dominant latent short-range concepts. 
-That is, unit-actions are the building blocks of the human activity. As shown in <a href="#fig5">Fig.5</a>, in order to the associating sub-actions across each actions, we introduce a set of vectors as a memory bank of sub-action templates, 
-which then serve as our sub-action pool and will be projected to meaningful latent space, we called latent concepts.
+Inspired by [[3][hussein2019videograph]], in a dataset of human activities, unit-actions can be thought of as the dominant latent short-range concepts; 
+that is, unit-actions are the building blocks of human activities. As shown in <a href="#fig5">Fig. 5</a>, in order to associate sub-actions across actions, we introduce a set of vectors as a memory bank of sub-action templates. 
+These serve as our sub-action pool and are projected into a meaningful latent space; we call them latent concepts.
 
-There are three key points worth to be mentioned:
-1. The sub-action family contains multiple feature vectors, where each vector is in charge of representing a specific sub-action.
+There are three key points worth mentioning:
+1. The sub-action family contains multiple feature vectors, where each vector is responsible for representing a specific sub-action.
 2. The sub-action family is automatically discovered and shared among all actions in the dataset, while all actions contribute to the learning of the sub-action family.
-3. The number of sub-actions is automatically determined and they are found to be semantically meaningful.
+3. The number of sub-actions is automatically determined, and they are found to be semantically meaningful.
 
 <a id="fig6"></a>
 {% include image.html
    img="/data/subaction/hussein2019videograph3.png"
-   caption="Fig. 6, [[3][hussein2019videograph]] Node Attention Module."
+   caption="Fig. 6: Node Attention Module [[3][hussein2019videograph]]."
 %}
 
-Although the properties of this work meets our goal, there are some concerns. First of all, it can not perform frame-wise inference.
-Second, this model is hard to learn since it has asked to learn the relationship of each nodes by itself.
-To tackle it, we have made the following modifications: (1) the embedding network extracts per-frame deep features by using 2D CNN instead of 3D networks.
-(2) we borrow the way of learn relationship of each nodes from paper [[12][swetha2021unsupervised]].
+Although the properties of this work meet our goal, there are some concerns. First of all, it cannot perform frame-wise inference.
+Second, the model is hard to train, since it is asked to learn the relationships among the nodes by itself.
+To tackle this, we made the following modifications: (1) the embedding network extracts per-frame deep features using a 2D CNN instead of 3D networks; 
+(2) we borrow the way of learning the relationships among the nodes from [[12][swetha2021unsupervised]].
 
 
 <div id="" style="text-align: justify;" markdown="1">
@@ -138,69 +138,69 @@ To tackle it, we have made the following modifications: (1) the embedding networ
 <a id="fig7"></a>
 {% include image.html
    img="/data/subaction/swetha2021unsupervised.png"
-   caption="Fig. 7, [[12][swetha2021unsupervised]] Unsupervised sub-action learning in complex activities."
+   caption="Fig. 7: Unsupervised sub-action learning in complex activities [[12][swetha2021unsupervised]]."
 %}
 
-As shown in <a href="#fig7">Fig.7</a>, [[12][swetha2021unsupervised]]'s objective is to learn latent concepts which can be represented as the potential sub-actions. 
-The similarity between the latent concepts of the same sub-action and the maximum confident input features is maximized, while the similarity w.r.t other input features is minimized. 
+As shown in <a href="#fig7">Fig. 7</a>, the objective of [[12][swetha2021unsupervised]] is to learn latent concepts that represent potential sub-actions. 
+The similarity between the latent concept of a sub-action and its most confident input features is maximized, while the similarity with respect to other input features is minimized. 
 
 <a id="fig8"></a>
 {% include image.html
    img="/data/subaction/cmp.png"
-   caption="Fig. 8, Disentangle latent concept learning."
+   caption="Fig. 8: Disentangled latent concept learning."
 %}
 
-Different from [[12][swetha2021unsupervised]], we only consider k-th self-similarity (<a href="#fig8">Fig.8(b)</a>) instead of summary of latent concepts (<a href="#fig8">Fig.8(a)</a>).
+Different from [[12][swetha2021unsupervised]], we consider only the k-th self-similarity (<a href="#fig8">Fig. 8(b)</a>) instead of the summary of latent concepts (<a href="#fig8">Fig. 8(a)</a>).
 </div>
 
 <div id="" style="text-align: justify;" markdown="1">
 
 **Additional Constraints** 
 + **Diversity Loss** 
-In terms of diversity exploration, we design a diversity loss to encourage each projected sub-action templates in the memory bank is different from other templates (to be unique). 
-This loss is calculated as the mean value of pairwise similarities for all sub-actions. 
-More specific, the pairwise similarity between each sub-action is measured with the dot product, it then aims to approximate to identity matrix by applying the Frobenius norm. 
-Doing so makes the sub-actions inter-independent. 
+In terms of diversity exploration, we design a diversity loss to encourage each projected sub-action template in the memory bank to be different from the other templates (i.e., to be unique). 
+This loss is calculated as the mean of the pairwise similarities over all sub-actions. 
+More specifically, the pairwise similarity between sub-actions is measured with the dot product, and the resulting similarity matrix is encouraged to approximate the identity matrix under the Frobenius norm. 
+Doing so makes the sub-actions mutually independent. 
 </div>
 
 <div id="" style="text-align: justify;" markdown="1">
 + **Background Suppression Regularization** 
-Since *Sub-Action Exploration Loss* encourages only foreground segments to produce high logits for specific sub-actions, means that background segments do not be supervised. 
-As mentioned in [[13][Lee2020BackgroundMV]], the softmax scores for some background segments could be high due to the relativeness of softmax function. 
-Moreover, while the diversity loss encourages the latent concepts in the memory bank to be unique, it does not guarantee that each latent concepts in the memory bank is meaningful. 
-For instance, a latent concept may not represent a sub-action and have low similarities with all input features during training. 
-To tackle this, we follow [[13][Lee2020BackgroundMV]] to forced background segments to have uniform probability distribution over sub-actions. 
-Doing so it can prevent background segments from having a high score for any sub-actions.
+Since the *Sub-Action Exploration Loss* encourages only foreground segments to produce high logits for specific sub-actions, background segments are left unsupervised. 
+As mentioned in [[13][Lee2020BackgroundMV]], the softmax scores of some background segments can still be high due to the relative nature of the softmax function. 
+Moreover, while the diversity loss encourages the latent concepts in the memory bank to be unique, it does not guarantee that each latent concept is meaningful. 
+For instance, a latent concept may not represent any sub-action and may have low similarities with all input features during training. 
+To tackle this, we follow [[13][Lee2020BackgroundMV]] and force background segments to have a uniform probability distribution over sub-actions. 
+Doing so prevents background segments from having a high score for any sub-action.
 </div>
 
 <div id="" style="text-align: justify;" markdown="1">
 + **Length Regularization** 
-The idea behind having *NAM* is that **"An action must consist of at least two sub-actions"**. 
-To this end, we introduce a proportional compression regularization term with an action summary ratio, similar with 
-[[10][ping2021exploring]], which penalizes where length of explored sub-action too long and avoids it becomes trivial solution.
+The idea behind *NAM* is that **"an action must consist of at least two sub-actions."** 
+To this end, we introduce a proportional compression regularization term with an action summary ratio, similar to 
+[[10][ping2021exploring]], which penalizes overly long explored sub-actions and prevents the trivial solution.
 </div>
 
 <div id="" style="text-align: justify;" markdown="1">
 + **Foreground Entropy Regularization** 
-We further introduce a standard entropy regularization term for foreground segments, it aims to directly encourage less entropic
-(more peaky) distributions. Contrary to *Background Suppression Regularization*, the goal of entropy regularization is to alter the
-attention maps, by biasing it towards low entropy.
+We further introduce a standard entropy regularization term for foreground segments, which directly encourages less entropic
+(more peaked) distributions. Contrary to the *Background Suppression Regularization*, the goal of entropy regularization is to alter the
+attention maps by biasing them toward low entropy.
 </div>
 
 ---
 
-### Why Plug and Play? Why is Plug and Play needed?
-You might think that [[3][hussein2019videograph]] has already dealt with both action and sub-actions detection task from the perspective of the graph theory, and we proposed an alternative way to improve the performance as well, 
-why we still need plug and play? Indeed, [[3][hussein2019videograph]] is a multi-task learning method, which significantly degrades the performance of action detection due to the dependency of sub-action family representations.
-That's why we've positioned our approach to *Plug and Play*. 
+### Why Plug and Play?
+One might think that [[3][hussein2019videograph]] has already addressed both the action and sub-action detection tasks from the perspective of graph theory, and that we merely propose an alternative way to improve its performance — 
+so why do we still need plug and play? Indeed, [[3][hussein2019videograph]] is a multi-task learning method, and the dependency on sub-action family representations significantly degrades its action detection performance.
+That is why we position our approach as *plug and play*. 
 
-In our work, given a trained action detection model, we just simply freeze the weights and apply *NAM* to extract sub-actions. 
-Which means that we tackle this problem in two stages, where during the first stage an embedding based on visual and temporal information is learned, and in the second stage clustering is applied on this embedding space.
+In our work, given a trained action detection model, we simply freeze its weights and apply *NAM* to extract sub-actions. 
+This means we tackle the problem in two stages: in the first stage, an embedding based on visual and temporal information is learned; in the second stage, clustering is applied in this embedding space.
 
 ---
 
 ### Interface Design
-We present a plug-and-play python module based on pytorch framework. An example of using our module is as follows.
+We provide a plug-and-play Python module based on the PyTorch framework. An example of using the module is as follows.
 
 {% highlight Python %}
 def NodeAttentionModule(x):
@@ -231,18 +231,18 @@ def NodeAttentionModule(x):
 <a id="fig9"></a>
 {% include image.html
    img="/data/subaction/output.png"
-   caption="Fig. 9, Visualization of our sub-action result."
+   caption="Fig. 9: Visualization of our sub-action results."
 %}
 
 ---
 
 ### Conclusions and Future Work
-First, our framework uses prototypes to represent sub-actions, which can be automatically learned in an end-to-end way. 
-Second, the sub-action mechanism directly learns from individual videos and does not require triplet samples, which avoids the complicated sampling process. 
-Besides, in the learning process, all videos interact with the same sub-action family, which provides a holistic solution to study all available videos. 
-Moreover, the proposed method performs at the sub-action level and bridges videos from different categories together. 
-We proposed a plug-and-play *Node Exploration Module (NEM)* to predicts the action units within an action in videos. 
-To our knowledge, this is the first work exploring a plug-and-play module for sub-action representation learning, capturing temporal structure and relationships within an action. 
+First, our framework uses prototypes to represent sub-actions, which are learned automatically in an end-to-end manner. 
+Second, the sub-action mechanism learns directly from individual videos and does not require triplet samples, which avoids a complicated sampling process. 
+Besides, during learning, all videos interact with the same sub-action family, which provides a holistic solution for studying all available videos. 
+Moreover, the proposed method operates at the sub-action level and bridges videos from different categories. 
+We proposed the plug-and-play *Node Attention Module (NAM)* to predict the action units within an action in videos. 
+To our knowledge, this is the first work to explore a plug-and-play module for sub-action representation learning, capturing the temporal structure and relationships within an action. 
 
 ---
 
