@@ -311,7 +311,10 @@ and study advanced topics in <b>machine learning</b> and <b>computer vision</b>.
 
 <p><a class="chip-link" href="https://scholar.google.com.tw/citations?user=0VGDeTUAAAAJ" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i> Google Scholar</a></p>
 
-<span class="year-chip">2020</span>
+<div class="pub-timeline">
+
+<div class="tl-group">
+<span class="tl-year">2020</span>
 
 <article class="pub-card">
   <a class="pub-thumb" href="https://github.com/Lilyo/DEN" target="_blank" rel="noopener">
@@ -343,8 +346,10 @@ and study advanced topics in <b>machine learning</b> and <b>computer vision</b>.
     </div>
   </div>
 </article>
+</div>
 
-<span class="year-chip">2019</span>
+<div class="tl-group">
+<span class="tl-year">2019</span>
 
 <article class="pub-card">
   <a class="pub-thumb" href="https://github.com/Lilyo/Parking-Space-Inference" target="_blank" rel="noopener">
@@ -372,6 +377,9 @@ and study advanced topics in <b>machine learning</b> and <b>computer vision</b>.
     </div>
   </div>
 </article>
+</div>
+
+</div>
 
 </section>
 {:/nomarkdown}
@@ -380,7 +388,10 @@ and study advanced topics in <b>machine learning</b> and <b>computer vision</b>.
 <section class="cv-section" id="projects">
 <h2 class="section-title"><i class="fa fa-flask"></i> Selected Projects</h2>
 
-<span class="year-chip">2018</span>
+<div class="pub-timeline">
+
+<div class="tl-group">
+<span class="tl-year">2018</span>
 
 <article class="pub-card">
   <span class="pub-thumb">
@@ -423,8 +434,10 @@ and study advanced topics in <b>machine learning</b> and <b>computer vision</b>.
     </div>
   </div>
 </article>
+</div>
 
-<span class="year-chip">2017</span>
+<div class="tl-group">
+<span class="tl-year">2017</span>
 
 <article class="pub-card">
   <a class="pub-thumb" href="https://github.com/Lilyo/EBMA" target="_blank" rel="noopener">
@@ -468,6 +481,9 @@ and study advanced topics in <b>machine learning</b> and <b>computer vision</b>.
     </div>
   </div>
 </article>
+</div>
+
+</div>
 
 </section>
 {:/nomarkdown}
