@@ -235,20 +235,24 @@ and study advanced topics in <b>machine learning</b> and <b>computer vision</b>.
 <section class="cv-section" id="honors">
 <h2 class="section-title"><i class="fa fa-trophy"></i> Honors &amp; Awards</h2>
 
-<div class="row-item">
-  <div class="row-main">
-    <h3>M.S. Thesis Award, Honorable Mention — IPPR</h3>
-    <p class="row-cite">You-Feng Wu, Vu-Hoang Tran, Ting-Wei Chang, Wei-Chen Chiu, Ching-Chun Huang, "DEN: Disentangling and Exchanging Network for Depth Completion", International Conference on Pattern Recognition (ICPR), Sep. 2020.</p>
-  </div>
-  <span class="date-badge">2020</span>
+<div class="pub-timeline">
+
+<div class="tl-group">
+<span class="tl-year">2020</span>
+<div class="row-main">
+  <h3>M.S. Thesis Award, Honorable Mention — IPPR</h3>
+  <p class="row-cite">You-Feng Wu, Vu-Hoang Tran, Ting-Wei Chang, Wei-Chen Chiu, Ching-Chun Huang, "DEN: Disentangling and Exchanging Network for Depth Completion", International Conference on Pattern Recognition (ICPR), Sep. 2020.</p>
+</div>
 </div>
 
-<div class="row-item">
-  <div class="row-main">
-    <h3>Best Paper Award — MAPR</h3>
-    <p class="row-cite">You-Feng Wu, Hoang Tran Vu, Ching-Chun Huang, "Semi-supervised and Multi-task Learning for On-street Parking Space Status Inference", Multimedia Analysis and Pattern Recognition (MAPR), May 2019.</p>
-  </div>
-  <span class="date-badge">2019</span>
+<div class="tl-group">
+<span class="tl-year">2019</span>
+<div class="row-main">
+  <h3>Best Paper Award — MAPR</h3>
+  <p class="row-cite">You-Feng Wu, Hoang Tran Vu, Ching-Chun Huang, "Semi-supervised and Multi-task Learning for On-street Parking Space Status Inference", Multimedia Analysis and Pattern Recognition (MAPR), May 2019.</p>
+</div>
+</div>
+
 </div>
 
 </section>
