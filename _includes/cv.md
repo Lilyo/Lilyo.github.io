@@ -492,12 +492,16 @@ and study advanced topics in <b>machine learning</b> and <b>computer vision</b>.
 <section class="cv-section" id="talks">
 <h2 class="section-title"><i class="fa fa-microphone"></i> Invited Talks</h2>
 
-<div class="row-item">
-  <div class="row-main">
-    <h3>Machine Learning Course — Fine-tuning: Essential Training</h3>
-    <p class="row-cite">Artificial intelligence and machine learning are changing the world. In this lecture, we are going to introduce: (1) everything a marketer needs to know about machine learning, and (2) how to efficiently fine-tune a model.</p>
-  </div>
-  <span class="date-badge">2021</span>
+<div class="pub-timeline">
+
+<div class="tl-group">
+<span class="tl-year">2021</span>
+<div class="row-main">
+  <h3>Machine Learning Course — Fine-tuning: Essential Training</h3>
+  <p class="row-cite">Artificial intelligence and machine learning are changing the world. In this lecture, we are going to introduce: (1) everything a marketer needs to know about machine learning, and (2) how to efficiently fine-tune a model.</p>
+</div>
+</div>
+
 </div>
 
 </section>
