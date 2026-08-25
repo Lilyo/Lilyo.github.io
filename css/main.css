@@ -20,6 +20,9 @@
   --radius-sm: 8px;
   --shadow: 0 1px 2px rgba(15, 23, 42, .06), 0 8px 24px -12px rgba(15, 23, 42, .12);
   --shadow-lift: 0 2px 4px rgba(15, 23, 42, .08), 0 16px 32px -16px rgba(15, 23, 42, .18);
+  --nav-bg: rgba(255, 255, 255, .85);
+  --btn-bg: #2563eb;
+  --btn-bg-hover: #1d4ed8;
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
   --nav-h: 60px;
@@ -34,6 +37,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  color-scheme: light;
 }
 
 body {
@@ -140,7 +144,7 @@ main.wrap { padding-top: 8px; padding-bottom: 48px; }
   top: 0;
   z-index: 100;
   height: var(--nav-h);
-  background: rgba(255, 255, 255, .85);
+  background: var(--nav-bg);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
@@ -212,7 +216,7 @@ main.wrap { padding-top: 8px; padding-bottom: 48px; }
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
-    background: #fff;
+    background: var(--card);
     border-bottom: 1px solid var(--line);
     box-shadow: var(--shadow);
     padding: 8px 20px 14px;
@@ -264,7 +268,7 @@ main.wrap { padding-top: 8px; padding-bottom: 48px; }
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  background: var(--primary);
+  background: var(--btn-bg);
   color: #fff;
   font-weight: 600;
   padding: 10px 20px;
@@ -272,7 +276,7 @@ main.wrap { padding-top: 8px; padding-bottom: 48px; }
   transition: background .15s ease, box-shadow .15s ease, transform .15s ease;
 }
 .btn-cv:hover {
-  background: var(--primary-dark);
+  background: var(--btn-bg-hover);
   color: #fff;
   text-decoration: none;
   box-shadow: var(--shadow-lift);
@@ -469,7 +473,7 @@ details.disclosure > summary:hover { text-decoration: underline; }
   height: 12px;
   border-radius: 50%;
   background: var(--primary);
-  border: 2.5px solid #fff;
+  border: 2.5px solid var(--card);
   box-shadow: 0 0 0 2px var(--primary-soft);
 }
 
@@ -541,7 +545,7 @@ details.disclosure > summary:hover { text-decoration: underline; }
   transition: all .15s ease;
 }
 .chip-link:hover {
-  background: var(--primary);
+  background: var(--btn-bg);
   color: #fff;
   text-decoration: none;
 }
@@ -568,7 +572,7 @@ details.disclosure > summary:hover { text-decoration: underline; }
   padding: 16px;
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
-  background: #fff;
+  background: var(--card);
   margin-bottom: 14px;
   transition: box-shadow .15s ease, border-color .15s ease;
 }
@@ -689,7 +693,7 @@ details.disclosure > summary:hover { text-decoration: underline; }
 
 #toc:not(:empty) {
   border: 1px solid var(--line);
-  background: #fff;
+  background: var(--card);
   border-radius: var(--radius-sm);
   padding: 14px 18px 14px 34px;
   margin: 18px 0;
@@ -719,7 +723,7 @@ details.disclosure > summary:hover { text-decoration: underline; }
 
 .site-footer {
   border-top: 1px solid var(--line);
-  background: #fff;
+  background: var(--card);
   padding: 20px;
   text-align: center;
   color: var(--muted);
@@ -731,4 +735,47 @@ details.disclosure > summary:hover { text-decoration: underline; }
 @media (max-width: 640px) {
   .cv-section { padding: 20px 18px; }
   .hero { padding: 26px 18px; }
+}
+
+/* 16. Dark mode (follows system preference)
+   -------------------------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  html { color-scheme: dark; }
+
+  :root {
+    --primary: #60a5fa;
+    --primary-dark: #93c5fd;
+    --primary-soft: rgba(96, 165, 250, .14);
+    --ink: #f1f5f9;
+    --body: #cbd5e1;
+    --muted: #94a3b8;
+    --line: #2a3648;
+    --card: #151f2e;
+    --bg: #0b1220;
+    --code-bg: #1a2434;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 8px 24px -12px rgba(0, 0, 0, .5);
+    --shadow-lift: 0 2px 4px rgba(0, 0, 0, .4), 0 16px 32px -16px rgba(0, 0, 0, .6);
+    --nav-bg: rgba(11, 18, 32, .85);
+  }
+
+  ::selection { background: #1d4ed8; color: #f1f5f9; }
+
+  /* Dim bright figures slightly so they sit well on dark cards */
+  .post img,
+  .image-wrapper img,
+  .news-media img,
+  .pub-thumb img { filter: brightness(.88); }
+  .hero-photo img,
+  .nav-brand img { filter: none; }
+
+  /* Pygments (default.css is light-only) — recolor common tokens */
+  .highlight, pre { background: var(--code-bg); }
+  .highlight .c, .highlight .c1, .highlight .cm, .highlight .cp { color: #8b98ab; font-style: italic; }
+  .highlight .k, .highlight .kn, .highlight .kd, .highlight .kc { color: #93c5fd; }
+  .highlight .s, .highlight .s1, .highlight .s2, .highlight .sd { color: #86efac; }
+  .highlight .m, .highlight .mi, .highlight .mf { color: #fbbf24; }
+  .highlight .nb, .highlight .nf, .highlight .nc, .highlight .nd { color: #c4b5fd; }
+  .highlight .o, .highlight .ow { color: #cbd5e1; }
+  .highlight .n, .highlight .p, .highlight .nn { color: #e2e8f0; }
+  .highlight .err { color: #fca5a5; }
 }

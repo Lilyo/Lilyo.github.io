@@ -144,7 +144,9 @@ and study advanced topics in <b>machine learning</b> and <b>computer vision</b>.
   <div class="xp-detail">
     <span class="xp-detail-label">Research Field</span>
     <ul>
-      <li>Time-gated SPAD</li>
+      <li>DCS (Diffuse Correlation Spectroscopy)</li>
+      <li>TCSPC (Time-Correlated Single-Photon Counting)</li>
+      <li>Bio-sensing (HRM / BPM / BGM)</li>
       <li>Depth Completion</li>
       <li>Neural SLAM</li>
       <li>On-device AI inferencing</li>
