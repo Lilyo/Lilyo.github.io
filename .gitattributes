@@ -1,0 +1,14 @@
+# Never apply text/EOL conversion to binary assets
+*.pdf  -text
+*.png  -text
+*.jpg  -text
+*.jpeg -text
+*.gif  -text
+*.ico  -text
+*.eot  -text
+*.ttf  -text
+*.otf  -text
+*.woff  -text
+*.woff2 -text
+*.onnx -text
+*.key  -text
