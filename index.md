@@ -1,6 +1,5 @@
 ---
 layout: index
-title: You-Feng Wu
 ---
 
 {% include cv.md %}
