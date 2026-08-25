@@ -710,7 +710,11 @@ details.disclosure > summary:hover { text-decoration: underline; }
   margin-top: 6px;
 }
 
-.dsq-brlink { display: none; }
+.comments {
+  margin-top: 36px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
 
 /* 15. Footer / misc
    -------------------------------------------------------------------------- */
