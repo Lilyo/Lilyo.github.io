@@ -8,6 +8,83 @@ and study advanced topics in <b>machine learning</b> and <b>computer vision</b>.
 {:/nomarkdown}
 
 {::nomarkdown}
+<section class="cv-section" id="experience">
+<h2 class="section-title"><i class="fa fa-briefcase"></i> Experience</h2>
+<div class="timeline">
+
+<article class="xp-item">
+  <h3 class="xp-company">Artilux Inc. <span class="xp-loc">Hsinchu</span></h3>
+  <div class="xp-role">
+    <span class="xp-title">Principal Engineer</span>
+    <span class="date-badge">Feb. 2026 – Present</span>
+  </div>
+  <div class="xp-role">
+    <span class="xp-title">Senior Software Engineer</span>
+    <span class="date-badge">Mar. 2022 – Feb. 2026</span>
+  </div>
+  <div class="xp-detail">
+    <span class="xp-detail-label">Research Field</span>
+    <ul>
+      <li>DCS (Diffuse Correlation Spectroscopy)</li>
+      <li>TCSPC (Time-Correlated Single-Photon Counting)</li>
+      <li>Bio-sensing (HRM / BPM / BGM)</li>
+      <li>Depth Completion</li>
+      <li>Neural SLAM</li>
+      <li>On-device AI inferencing</li>
+    </ul>
+  </div>
+</article>
+
+<article class="xp-item">
+  <h3 class="xp-company">KaiKuTeK Inc. <span class="xp-loc">Taipei</span></h3>
+  <div class="xp-role">
+    <span class="xp-title">Machine Learning Engineer</span>
+    <span class="date-badge">Feb. 2020 – Mar. 2022</span>
+  </div>
+  <div class="xp-detail">
+    <span class="xp-detail-label">Research Field</span>
+    <ul>
+      <li>Sub-actions exploration</li>
+      <li>Rapid gesture recognition</li>
+      <li>Temporal coherency</li>
+    </ul>
+  </div>
+  <div class="xp-detail">
+    <span class="xp-detail-label">SDK Machine Learning Team Leader</span>
+    <ul>
+      <li>Customer support and team leadership</li>
+      <li>Deployed Python API to AWS cloud training platform</li>
+    </ul>
+  </div>
+</article>
+
+<article class="xp-item">
+  <div class="xp-role">
+    <span class="xp-title">Military Service in Taiwan</span>
+    <span class="date-badge">Oct. 2019 – Feb. 2020</span>
+  </div>
+</article>
+
+<article class="xp-item">
+  <h3 class="xp-company">KaiKuTeK Inc. <span class="xp-loc">Taipei</span></h3>
+  <div class="xp-role">
+    <span class="xp-title">Machine Learning Research Intern</span>
+    <span class="date-badge">Jul. 2019 – Oct. 2019</span>
+  </div>
+  <div class="xp-detail">
+    <span class="xp-detail-label">Research Field</span>
+    <ul>
+      <li>Long-Tailed Object Recognition</li>
+      <li>Few-shot Learning</li>
+    </ul>
+  </div>
+</article>
+
+</div>
+</section>
+{:/nomarkdown}
+
+{::nomarkdown}
 <section class="cv-section" id="news">
 <h2 class="section-title"><i class="fa fa-bullhorn"></i> Spotlight News</h2>
 
@@ -123,83 +200,6 @@ and study advanced topics in <b>machine learning</b> and <b>computer vision</b>.
   </details>
 </div>
 
-</section>
-{:/nomarkdown}
-
-{::nomarkdown}
-<section class="cv-section" id="experience">
-<h2 class="section-title"><i class="fa fa-briefcase"></i> Experience</h2>
-<div class="timeline">
-
-<article class="xp-item">
-  <h3 class="xp-company">Artilux Inc. <span class="xp-loc">Hsinchu</span></h3>
-  <div class="xp-role">
-    <span class="xp-title">Principal Engineer</span>
-    <span class="date-badge">Feb. 2026 – Present</span>
-  </div>
-  <div class="xp-role">
-    <span class="xp-title">Senior Software Engineer</span>
-    <span class="date-badge">Mar. 2022 – Feb. 2026</span>
-  </div>
-  <div class="xp-detail">
-    <span class="xp-detail-label">Research Field</span>
-    <ul>
-      <li>DCS (Diffuse Correlation Spectroscopy)</li>
-      <li>TCSPC (Time-Correlated Single-Photon Counting)</li>
-      <li>Bio-sensing (HRM / BPM / BGM)</li>
-      <li>Depth Completion</li>
-      <li>Neural SLAM</li>
-      <li>On-device AI inferencing</li>
-    </ul>
-  </div>
-</article>
-
-<article class="xp-item">
-  <h3 class="xp-company">KaiKuTeK Inc. <span class="xp-loc">Taipei</span></h3>
-  <div class="xp-role">
-    <span class="xp-title">Machine Learning Engineer</span>
-    <span class="date-badge">Feb. 2020 – Mar. 2022</span>
-  </div>
-  <div class="xp-detail">
-    <span class="xp-detail-label">Research Field</span>
-    <ul>
-      <li>Sub-actions exploration</li>
-      <li>Rapid gesture recognition</li>
-      <li>Temporal coherency</li>
-    </ul>
-  </div>
-  <div class="xp-detail">
-    <span class="xp-detail-label">SDK Machine Learning Team Leader</span>
-    <ul>
-      <li>Customer support and team leadership</li>
-      <li>Deployed Python API to AWS cloud training platform</li>
-    </ul>
-  </div>
-</article>
-
-<article class="xp-item">
-  <div class="xp-role">
-    <span class="xp-title">Military Service in Taiwan</span>
-    <span class="date-badge">Oct. 2019 – Feb. 2020</span>
-  </div>
-</article>
-
-<article class="xp-item">
-  <h3 class="xp-company">KaiKuTeK Inc. <span class="xp-loc">Taipei</span></h3>
-  <div class="xp-role">
-    <span class="xp-title">Machine Learning Research Intern</span>
-    <span class="date-badge">Jul. 2019 – Oct. 2019</span>
-  </div>
-  <div class="xp-detail">
-    <span class="xp-detail-label">Research Field</span>
-    <ul>
-      <li>Long-Tailed Object Recognition</li>
-      <li>Few-shot Learning</li>
-    </ul>
-  </div>
-</article>
-
-</div>
 </section>
 {:/nomarkdown}
 
