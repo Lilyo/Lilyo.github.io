@@ -262,48 +262,48 @@ and study advanced topics in <b>machine learning</b> and <b>computer vision</b>.
 <section class="cv-section" id="patents">
 <h2 class="section-title"><i class="fa fa-certificate"></i> Patents</h2>
 
-<div class="row-item">
-  <div class="row-main">
-    <h3>General gesture detection method and general gesture detection device</h3>
-    <p class="row-cite">You-Feng Wu. 2023. Taiwan Patent I810564, filed May 14, 2021.</p>
-    <a class="chip-link" href="https://patents.google.com/patent/TWI810564B/en" target="_blank" rel="noopener"><i class="fa fa-external-link"></i> Google Patents</a>
-  </div>
-  <span class="date-badge">2023</span>
+<div class="pub-timeline">
+
+<div class="tl-group">
+<span class="tl-year">2023</span>
+<div class="row-main">
+  <h3>General gesture detection method and general gesture detection device</h3>
+  <p class="row-cite">You-Feng Wu. 2023. Taiwan Patent I810564, filed May 14, 2021.</p>
+  <a class="chip-link" href="https://patents.google.com/patent/TWI810564B/en" target="_blank" rel="noopener"><i class="fa fa-external-link"></i> Google Patents</a>
+</div>
 </div>
 
-<div class="row-item">
-  <div class="row-main">
-    <h3>Headset apparatus with gesture recognition function</h3>
-    <p class="row-cite">You-Feng Wu. 2022. Taiwan Patent I786678, filed Jun. 11, 2021.</p>
-    <a class="chip-link" href="https://patents.google.com/patent/TWI786678B/en" target="_blank" rel="noopener"><i class="fa fa-external-link"></i> Google Patents</a>
-  </div>
-  <span class="date-badge">2022</span>
+<div class="tl-group">
+<span class="tl-year">2022</span>
+<div class="row-main">
+  <h3>Headset apparatus with gesture recognition function</h3>
+  <p class="row-cite">You-Feng Wu. 2022. Taiwan Patent I786678, filed Jun. 11, 2021.</p>
+  <a class="chip-link" href="https://patents.google.com/patent/TWI786678B/en" target="_blank" rel="noopener"><i class="fa fa-external-link"></i> Google Patents</a>
+</div>
+<div class="row-main">
+  <h3>Range Doppler angle sensing method and device</h3>
+  <p class="row-cite">You-Feng Wu. 2022. Taiwan Patent I756122, filed Apr. 30, 2021.</p>
+  <a class="chip-link" href="https://patents.google.com/patent/TWI756122B/en" target="_blank" rel="noopener"><i class="fa fa-external-link"></i> Google Patents</a>
+</div>
 </div>
 
-<div class="row-item">
-  <div class="row-main">
-    <h3>Range Doppler angle sensing method and device</h3>
-    <p class="row-cite">You-Feng Wu. 2022. Taiwan Patent I756122, filed Apr. 30, 2021.</p>
-    <a class="chip-link" href="https://patents.google.com/patent/TWI756122B/en" target="_blank" rel="noopener"><i class="fa fa-external-link"></i> Google Patents</a>
-  </div>
-  <span class="date-badge">2022</span>
+<div class="tl-group">
+<span class="tl-year">2021</span>
+<div class="row-main">
+  <h3>Impulse-like gesture recognition method and impulse-like gesture recognition system</h3>
+  <p class="row-cite">You-Feng Wu. 2021. Taiwan Patent I748778, filed Dec. 2, 2020.</p>
+  <a class="chip-link" href="https://patents.google.com/patent/TWI748778B/en" target="_blank" rel="noopener"><i class="fa fa-external-link"></i> Google Patents</a>
+</div>
 </div>
 
-<div class="row-item">
-  <div class="row-main">
-    <h3>Impulse-like gesture recognition method and impulse-like gesture recognition system</h3>
-    <p class="row-cite">You-Feng Wu. 2021. Taiwan Patent I748778, filed Dec. 2, 2020.</p>
-    <a class="chip-link" href="https://patents.google.com/patent/TWI748778B/en" target="_blank" rel="noopener"><i class="fa fa-external-link"></i> Google Patents</a>
-  </div>
-  <span class="date-badge">2021</span>
+<div class="tl-group">
+<span class="tl-year">2020</span>
+<div class="row-main">
+  <h3>Impulse-like gesture recognition method and impulse-like gesture recognition system</h3>
+  <p class="row-cite">You-Feng Wu. 2020. U.S. Patent Application 17/084,986, filed Oct. 30, 2020. Patent pending.</p>
+</div>
 </div>
 
-<div class="row-item">
-  <div class="row-main">
-    <h3>Impulse-like gesture recognition method and impulse-like gesture recognition system</h3>
-    <p class="row-cite">You-Feng Wu. 2020. U.S. Patent Application 17/084,986, filed Oct. 30, 2020. Patent pending.</p>
-  </div>
-  <span class="date-badge">2020</span>
 </div>
 
 </section>

@@ -584,6 +584,8 @@ details.disclosure > summary:hover { text-decoration: underline; }
   box-shadow: 0 0 0 2px var(--primary-soft);
 }
 
+.tl-group .row-main + .row-main { margin-top: 16px; }
+
 .tl-year {
   display: inline-block;
   margin: 0 0 12px;
